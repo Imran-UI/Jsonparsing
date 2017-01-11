@@ -2,6 +2,7 @@ package com.example.imran.jsonparsing.infrastructure;
 
 import android.app.Application;
 
+import com.example.imran.jsonparsing.live.Module;
 import com.squareup.otto.Bus;
 
 public class BeastmovieApplication extends Application{
@@ -20,5 +21,6 @@ public class BeastmovieApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+        Module.Register(this);
     }
 }
