@@ -1,5 +1,9 @@
 package com.example.imran.jsonparsing.Services;
 
+import com.example.imran.jsonparsing.entities.Movie;
+
+import java.util.ArrayList;
+
 public class MovieService {
 
     private MovieService() {
@@ -16,7 +20,7 @@ public class MovieService {
 
      public static class SearchMoviesResponse{
 
-         public String modifiedquery;
+         public ArrayList<Movie> movies;
 
      }
 

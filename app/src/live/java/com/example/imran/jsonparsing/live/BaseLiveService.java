@@ -8,9 +8,11 @@ public class BaseLiveService {
 
     protected BeastmovieApplication application;
     protected Bus bus;
+    protected Moviewebservices api;
 
-    public BaseLiveService(BeastmovieApplication application) {
+    public BaseLiveService(BeastmovieApplication application, Moviewebservices api) {
         this.application = application;
+        this.api = api;
         bus = application.getBus();
         bus.register(this);
     }
